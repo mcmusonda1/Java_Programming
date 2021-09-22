@@ -28,8 +28,6 @@ public class Main {
         //Comparing two strings
         System.out.println(str1.compareTo(str2));
 
-        //Equal the string
-        System.out.println(str1.equals(str2));
 
         //Scanner
         Scanner in =  new Scanner(System.in);
@@ -62,5 +60,35 @@ public class Main {
         System.out.println("char Value: " + charVal);
         System.out.println("short Value: " + shortVal);
         System.out.println("int Value: " + longVal);
+
+        // Scanner input
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter a grade: ");
+
+        //input
+        int grade = scan.nextInt();
+        System.out.println("Your grade is: ");
+
+        //Conditional statement
+
+        if (grade >= 0 && grade <= 49) {
+            System.out.println("F");
+        } else if  ( grade >= 50 && grade <= 55) {
+            System.out.println("D");
+        } else if (grade >= 56 && grade <= 60) {
+            System.out.println("D+");
+        } else if (grade >= 61 && grade <= 65) {
+            System.out.println("C");
+        } else if (grade >= 66 && grade <= 70) {
+            System.out.println("C+");
+        } else if (grade >= 71 && grade <= 75) {
+            System.out.println("B");
+        } else if (grade >= 76 && grade <= 80) {
+            System.out.println("B+");
+        } else if (grade >= 81 && grade <= 100) {
+            System.out.println("A");
+        } else {
+            System.out.println("Invalid input");
+        }
     }
 }
