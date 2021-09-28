@@ -102,5 +102,24 @@ public class Main {
             default -> System.out.println("Recheck on your calender");
         }
 
+        ///Enhanced for loop
+        String array[] = {"Musonda", "Leonard", "Networking"};
+
+        for (String x:array)
+        {
+            System.out.println(x);
+        }
+
+        //for loop
+
+        Scanner fo = new Scanner(System.in);
+        System.out.println("Enter a number to increment: ");
+
+        for (int number = fo.nextInt(); number <= 10; number = number +2)
+        {
+            System.out.println(number);
+        }
+
+
     }
 }
