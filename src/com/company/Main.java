@@ -90,5 +90,17 @@ public class Main {
         } else {
             System.out.println("Invalid input");
         }
+        //Switch statement
+        Scanner pc = new Scanner(System.in);
+        System.out.println("When is the next world cup? ");
+
+        int year = pc.nextInt();
+        System.out.println("Have you gotten it correct? ");
+        switch (year) {
+            case 2021 -> System.out.println("Almost correct");
+            case 2022 -> System.out.println("Yes you are correct, prepare to attend it.");
+            default -> System.out.println("Recheck on your calender");
+        }
+
     }
 }
