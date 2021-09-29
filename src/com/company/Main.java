@@ -113,12 +113,24 @@ public class Main {
         //for loop
 
         Scanner fo = new Scanner(System.in);
-        System.out.println("Enter a number to increment: ");
+        System.out.println("Enter a number less than 10 to increment by 2 using for loop: ");
 
         for (int number = fo.nextInt(); number <= 10; number = number +2)
         {
             System.out.println(number);
         }
+
+        //While loops
+        Scanner wh = new Scanner(System.in);
+        System.out.println("Enter number less than 10 to increment by 1 using a do while loop: ");
+
+        int val = wh.nextInt();
+        do {
+            System.out.println(val);
+            val++;
+        }
+        while (val < 10);
+
 
 
     }
